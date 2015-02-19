@@ -1,0 +1,151 @@
+﻿<Window x:Class="MwsFeeds.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TabControl>
+            <TabItem Header="SubmitFeed">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="txtFileName"
+                             Text="アップロードファイル指定"
+                             Height="25"
+                             Width="180"
+                             Margin="10 10 0 0"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Top"/>
+                    <Button x:Name="btnSubmitFeed"
+                            Content="アップロード実行"
+                            Width="120"
+                            Height="25"
+                            Margin="10 50 0 0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Click="btnSubmitFeed_Click"
+                            />
+                    <TextBlock x:Name="txSubmitFeedResult"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"
+                               />
+                </Grid>
+            </TabItem>
+            <TabItem Header="GetFeedSubmissionList">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnGetFeedSubmissionList"
+                            Content="情報取得"
+                            Width="120"
+                            Height="25"
+                            Margin="10 10 0 0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Click="btnGetFeedSubmissionList_Click"
+                            />
+                    <TextBlock x:Name="txtGetFeedSubmissionList"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"
+                               />
+                </Grid>
+            </TabItem>
+            <TabItem Header="GetFeedSubmissionListByNextToken">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnGetFeedSubmissionListByNext"
+                            Content="次の情報取得"
+                            Width="120"
+                            Height="25"
+                            Margin="10 10 0 0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Click="btnGetFeedSubmissionListByNext_Click"
+                            />
+                    <TextBlock x:Name="txtGetFeedSubmissionListByNext"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"
+                               />
+                </Grid>
+            </TabItem>
+            <TabItem Header="GetFeedSubmissionCount">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnGetSubmissionCount"
+                            Content="件数取得"
+                            Width="120"
+                            Height="25"
+                            Margin="10 10 0 0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Click="btnGetSubmissionCount_Click"
+                            />
+                    <TextBlock x:Name="txtGetFeedSubmissionCount"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"
+                               />
+                </Grid>
+            </TabItem>
+            <TabItem Header="CancelFeedSubmissions">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="txtCancelFeedSubmissionsSearch"
+                             Text="レポートID設定"
+                             Height="25"
+                             Width="180"
+                             Margin="10 10 0 0"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Top"/>
+                    <Button x:Name="btnCancelFeedSubmission"
+                            Content="キャンセル処理"
+                            Width="120"
+                            Height="25"
+                            Margin="10 50 0 0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Click="btnCancelFeedSubmission_Click"
+                            />
+                    <TextBlock x:Name="txtCancelFeedSubmission"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"
+                               />
+                </Grid>
+            </TabItem>
+            <TabItem Header="GetFeedSubmissionResult">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="txtFeedSubmissionResultSearch"
+                             Text="レポートID設定"
+                             Height="25"
+                             Width="180"
+                             Margin="10 10 0 0"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Top"
+                             />
+                    <Button x:Name="btnGetFeedSubmissionResult"
+                            Content="処理結果取得"
+                            Width="120"
+                            Height="25"
+                            Margin="10 50 0 0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Click="btnGetFeedSubmissionResult_Click"
+                            />
+                    <TextBlock x:Name="txtGetFeedSubmissionResult"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"
+                               />
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
