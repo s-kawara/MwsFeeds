@@ -25,4 +25,4 @@ public static string strServiceURL = "Service URL";
 ```
 
 ###Run Result
-![Screen Shot](http://blog.activebrain.co.jp/wp-content/uploads/2015/02/image59.png)
+![Screen Shot](http://blog.activebrain.co.jp/wp-content/uploads/2015/02/image63.png)
